@@ -36,6 +36,17 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          colors: {
+            'maincolor': '#7a2e94'
+          }
+        }
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
