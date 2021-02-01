@@ -1,11 +1,30 @@
 <template>
-  <div class="py-10 bg-teal-100 mt-64">
-    <div class="max-w-5xl mx-auto text-center">
-      <p class="title">
-        boa post production
-      </p>
-       <nuxt-link class="cta" to="/about">hakkımızda</nuxt-link>
+  <div class="container">
+    <div>
+      <h1 class="title">
+        contact page
+      </h1>
+      <nuxt-link class="cta" to="/">go to home </nuxt-link>
+      <nuxt-link class="cta" to="/about">go to about </nuxt-link>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
       </div>
+    </div>
   </div>
 </template>
 
