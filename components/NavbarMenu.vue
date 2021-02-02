@@ -14,7 +14,7 @@
           </svg>
         </button>
         <transition name="slide-left">
-          <div v-if="isOpen" class="menu z-20" :class="isOpen ? '-open':'hidden'" >
+          <div v-if="isOpen" class="menu z-20 bg-maincolor" :class="isOpen ? '-open':'hidden'"  >
             <ul>
               <nuxt-link to="/" class="pr-5 text-white">Ana Sayfa</nuxt-link>
               <nuxt-link to="/about/" class="pr-5 text-white">Hakkımızda</nuxt-link>
@@ -74,7 +74,6 @@ export default {
 .menu {
 
   color: #fff;
-  background: #e7d546;
   align-items: center;
   justify-content: center;
   font-size: 36px;

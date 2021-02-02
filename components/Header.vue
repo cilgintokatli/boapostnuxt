@@ -56,12 +56,12 @@ export default {
 }
 
 .logo{
-  width: 55%;
+  width: 50%;
   transition: all .9s;
 }
 #nav{
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, transparent 50%, #7a2e94 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #7a2e94 51%);
     -webkit-transition: background-position .7s;
     -moz-transition: background-position .7s;
     transition: background-position .7s;
