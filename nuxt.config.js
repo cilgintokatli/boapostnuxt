@@ -8,7 +8,11 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'
+      }
     ]
   },
 
@@ -18,6 +22,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-block-reveal.client.js',
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -35,6 +41,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@blokwise/dynamic'
+    
   ],
   tailwindcss: {
     config: {
@@ -42,7 +50,12 @@ export default {
         extend: {
           colors: {
             'maincolor': '#7a2e94'
-          }
+          },
+          margin: {
+            '72':'18rem',
+            '-72': '-18rem',
+            '-80':'-20rem'
+           }
         }
       }
     }
