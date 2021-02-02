@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-64 ">
-      <div class="order-2 lg:order-1 shadow-2xl scale-75 transform transition duration-500 hover:scale-110" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
+      <div class="order-2 lg:order-1 shadow-2xl lg:scale-75 transform transition duration-500 lg:hover:scale-110" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
       <div class="mx-auto py-5 px-5 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl bg-white w-full">
             <div class="comparison-slider">
               <figure class="comparison-before">
