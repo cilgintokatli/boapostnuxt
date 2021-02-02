@@ -1,56 +1,21 @@
 <template>
   <div>
-    <transition name="fade">
-      <HeaderHome v-if="isHomePage" />
-    </transition>
-    
-    <transition name="fade">
-      <HeaderAll v-if="isHomeAll" />
-    </transition>
+    <Header/>
     <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-import HeaderHome from '~/components/HeaderHome.vue'
-import HeaderAll from '~/components/HeaderAll.vue'
+import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    HeaderHome,
-    HeaderAll,
+    Header,
     Footer
-  },
-  data() {
-        return {
-            isHomePage: false,
-            isHomeAll: false
-        }
-    },
-  mounted() {
-      if (this.$route.path === '/') {
-        this.isHomePage = true
-        this.isHomeAll = false
-      }
-      else {
-        this.isHomePage= false
-        this.isHomeAll = true
-      } 
-    },
-    watch: {
-    '$route' () {
-      if (this.$route.path === '/') {
-        this.isHomePage = true
-        this.isHomeAll = false
-      }
-      else {
-        this.isHomePage= false
-        this.isHomeAll = true
-      }  
-    }
   }
+    
 }
 </script>
 
@@ -59,12 +24,7 @@ export default {
 <style>
 html {
   font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
     Roboto,
-    'Helvetica Neue',
     Arial,
     sans-serif;
   font-size: 16px;
@@ -84,34 +44,8 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .8s
@@ -133,18 +67,16 @@ html {
   margin-top: 0px;
 }
 
-a.cta {
+.cta, a.cta {
   background: linear-gradient(to bottom, #e7d546 0%, #e7d546 100%);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 3px 3px;
-  color: #000;
   text-decoration: none;
-  font-size:2em;
 }
 
 
-a.cta:hover {
+.cta.active, .cta:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23e7d546' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;

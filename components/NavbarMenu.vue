@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="toggle" class="button" :class="{'-menu-open':isOpen}">
+        <button @click="toggle" class="button" :class="isOpen ? '-menu-open':'hidden'">
           <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g>
               <line x1="0" y1="17" x2="48" y2="17" stroke-width="7" />
@@ -14,7 +14,7 @@
           </svg>
         </button>
         <transition name="slide-left">
-          <div v-if="isOpen" class="menu" :class="isOpen ? '-open':'hidden'" >
+          <div v-if="isOpen" class="menu z-20" :class="isOpen ? '-open':'hidden'" >
             <ul>
               <nuxt-link to="/" class="pr-5 text-white">Ana Sayfa</nuxt-link>
               <nuxt-link to="/about/" class="pr-5 text-white">Hakkımızda</nuxt-link>
@@ -36,6 +36,11 @@ export default {
     toggle() {
       this.isOpen = !this.isOpen
     }
+  },
+  watch: {
+    '$route' () {
+      this.isOpen = false
+    }
   }
 }
 </script>
@@ -54,7 +59,7 @@ export default {
 .slide-left-enter-active,
 .slide-right-leave-active,
 .slide-right-enter-active {
-  transition: 0.3s cubic-bezier(.17,.67,.83,.67);
+  transition: 0.3s ease-in;
 }
 
 .slide-left-enter {
@@ -69,7 +74,7 @@ export default {
 .menu {
 
   color: #fff;
-  background: #000;
+  background: #e7d546;
   align-items: center;
   justify-content: center;
   font-size: 36px;
@@ -82,7 +87,7 @@ export default {
     visibility: hidden;
 }
 .menu.-open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
 
 }
@@ -101,7 +106,7 @@ export default {
   height: 36px;
   cursor: pointer;
   position:relative;
-  z-index: 2;
+  z-index:31;
 }
 
 button:focus{

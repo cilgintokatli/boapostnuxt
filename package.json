@@ -9,12 +9,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@blokwise/dynamic": "^1.1.0",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "locomotive-scroll": "^4.0.6",
+    "nuxt": "^2.14.12",
+    "vue-block-reveal": "^1.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.2"
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
   }
 }
