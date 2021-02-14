@@ -1,0 +1,81 @@
+<template>
+  <div class="container">
+    <div>
+      <h1 class="title mt-40">
+        ne yapıyoruz
+      </h1>
+      <div class="text-left mb-20"> 
+        <h3>Edit</h3>
+            <p>
+            Kurgu; Çekilen görüntülerin senaryoya uygun şekilde, içinde çeşitli değişkenler barındıran matematiksel bir örgüyle kurulması/dizilmesi işidir.
+
+            boabost; Profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.
+            </p>
+
+        <h3>Color</h3>
+            <p>
+            Görsel dünyada atmosfer yaratmanın en önemli etkenlerinden biri renktir. Sinema ve video endüstrisinde içeriğin renk atmosferinin yaratılması temel dallardan biridir.
+
+            boabost; Renk düzenlemesi için özel tasarlanmış stüdyosunda, profesyonel ekip ve ekipmanlarıyla, endüstri ihtiyaçlarına, içeriğin türüne ve içerik üreticisinin taleplerine göre, içeriklerin renk düzenlemesini yapar.
+            </p>
+
+        <h3>Sound</h3>
+            <p> 
+            Sinema ve video içeriklerindeki ses düzenlemesi, görüntü kadar önemli bir unsurdur. Sesin doğru kullanımı ve doğru tasarlanması üretilen eserin kalitesini yukarı taşıdığı gibi izleyiciye yaşatılmak istenen duygunun da güçlenmesini sağlar.
+
+            Boapost; tüm video içeriklerin ses tasarımını, seslerin foley ile güçlendirilmesini, ses ve müzik miksajını yapar.
+            </p>
+
+        <h3>Graphic</h3>
+            <p>
+            Sinema ve video endüstrisinde grafik, vfx, 2D/3D animasyon işlemleri vageçilmez bir alandır. İçeriğin izleyiciye aktarılmak istenen biçimine kavuşmasına yardımcı olduğu gibi üreticinin de yaratıcılığının sınırlarını zorlamasına yardımcı olur. Bu alanda iyi sonuçlar elde etmek, hem profesyonel ve deneyimli bir ekip hem de gelişmiş teknolojik alt yapı ve ekipmanlara sahip olmaya bağlıdır.
+
+            Boapost; Sinema ve video içeriklerin ihtiyaç duyduğu grafik desteğini, elindeki gelişmiş ekipmanla, hızlı ve sonuç odaklı çözümlerle üreticiye sunar.
+            </p>
+
+        <h3>Kurgu ve Color Stüdyoları</h3>
+            <p>
+            Post prodüksiyon süreci yoğun mesai ve bunun yanında yaratıcılık isteyen bir süreçtir. Bu süreçte çalışılan ortamın konforlu olması ve stüdyonun tüm teknolojik ihtiyaçları karşılaması önemli bir gerekliliktir.
+
+            Boapost; Sinema ve video üreticilerine konforlu ve içeriğin gerektirdiği tüm teknolojik imkanı sağlayan kurgu ve color stüdyosu kiralama hizmeti verir.
+            </p>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style>
+/* Sample `apply` at-rules with Tailwind CSS
+.container {
+@apply min-h-screen flex justify-center items-center text-center mx-auto;
+}
+*/
+
+
+.title {
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+h3{
+    @apply title
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+</style>
