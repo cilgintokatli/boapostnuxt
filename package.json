@@ -18,8 +18,15 @@
     "vue-block-reveal": "^1.0.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@nuxt/image": "^0.3.0",
     "@nuxtjs/tailwindcss": "^3.4.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
+    "jimp": "^0.16.1",
     "node-sass": "^5.0.0",
+    "responsive-loader": "^2.3.0",
     "sass-loader": "^10.1.1"
   }
 }

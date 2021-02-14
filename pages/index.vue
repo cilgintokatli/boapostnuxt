@@ -1,6 +1,6 @@
 <template>
 
-  <div class="py-10 px-16 mt-20 lg:mt-48 bg-gradient">
+  <div class="py-10 px-16 mt-20 lg:mt-48">
     <section>
       <Hakkimizda />
     </section>
