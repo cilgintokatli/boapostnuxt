@@ -21,7 +21,7 @@ yaratıcı bir süreçten geçecektir.
       </div>
       <div class="inline-block">
         <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
-          <nuxt-link class="cta font-bold text-xl text-black lg:text-4xl" to="/about">biz kimiz</nuxt-link>
+          <nuxt-link class="cta font-bold text-xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>
         </div>
       </div>
     </div>
