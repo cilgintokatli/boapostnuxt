@@ -1,32 +1,27 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-64 ">
-      <div class="order-2 lg:order-1 shadow-2xl lg:scale-75 transform transition duration-500 lg:hover:scale-110" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
-      <div class="mx-auto py-5 px-5 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl bg-white w-full">
-            <div class="comparison-slider">
-              <figure class="comparison-before">
-                <!-- image (before) -->
-                <img src="https://picturepan2.github.io/spectre/img/macos-sierra-2.jpg" alt="vfx comparison">
-                <div class="comparison-label">Önce</div>
-              </figure>
-
-              <figure class="comparison-after">
-                <!-- image (after) -->
-                <img style="filter: grayscale(75%);" src="https://picturepan2.github.io/spectre/img/macos-sierra-2.jpg" alt="vfx comparison">
-                <div class="comparison-label">Sonra</div>
-                <textarea class="comparison-resizer" readonly></textarea>
-              </figure>
-            </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-64">
+    <div class="order-2 lg:order-1 shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
+      <div class="mx-auto py-5 px-5 bg-white w-full">
+          <figure>
+              <img :src="require('~/assets/img/index-biz-kimiz.jpg?resize&size=1000')" alt="boapost biz kimiz">
+          </figure>
       </div>
     </div>
     <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-1 lg:order-2 self-end">
       <div class="mx-auto" v-block-reveal="{isContentHidden:'true',delay:1000, bgcolor:'#7a2e94'}" >
-        <div class="text-4xl lg:text-4xl text-maincolor">
-          <p>boa post production is a post production company that helps your organization.</p>
+        <div class="text-2xl lg:text-2xl text-gray-700">
+          <p>
+            Bakmanın ve görmenin estetiği, görsel sanatların olmazsa olmazıyken
+“son dokunuş”
+olan post prodüksiyonun da bu düsturdan ayrı olması düşünülemez. Boapost’ta, ilk adımdan itibaren yaratıcı bir sürecin ürünü olan projeleriniz, son adım olan post prodüksiyon aşamasında da yine
+–dümeninde sizin olduğunuz-
+yaratıcı bir süreçten geçecektir.
+          </p>
         </div>
       </div>
       <div class="inline-block">
         <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
-          <nuxt-link class="cta font-bold text-xl text-black lg:text-4xl" to="/about">hakkımızda daha fazla</nuxt-link>
+          <nuxt-link class="cta font-bold text-xl text-black lg:text-4xl" to="/about">biz kimiz</nuxt-link>
         </div>
       </div>
     </div>

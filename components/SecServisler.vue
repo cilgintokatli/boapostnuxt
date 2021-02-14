@@ -1,20 +1,20 @@
 <template>
-    <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 gap-4 lg:px-20 mb-60" >
-        <div class="slides order-2 col-span-3 text-white">
-          <transition
-            mode="out-in"
-            enter-active-class="animate__animated animate__fadeInDown"
-            leave-active-class="animate__animated animate__fadeOutUp"
-          >
-            <NuxtDynamic :name="currentTabComponent" />
-          </transition>
-        </div>
+    <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 gap-4 lg:px-20 mb-80" >
+            <div class="slides order-2 col-span-3 text-gray-700">
+            <transition
+                mode="out-in"
+                enter-active-class="animate__animated animate__fadeInDown"
+                leave-active-class="animate__animated animate__fadeOutUp"
+            >
+                <NuxtDynamic :name="currentTabComponent" />
+            </transition>
+            </div>
         <div class="slidenav order-1 lg:col-span-2 grid lg:justify-items-end lg:items-start lg:auto-rows-max">
             <button v-for="tab in tabs"
                     :key="tab"
                     :class="[ { active: currentTab === tab }]"
                     @click="currentTab = tab"
-                    class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick"
+                    class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase"
                 >
                     {{ tab }}
                
@@ -26,15 +26,15 @@
 <script>
 export default {
     data() {
-    return {
-      currentTab: 'VFX',
-      tabs: ['VFX', 'Retouch', 'Greenscreen'],
-      scrollPosition: null
-    }
+        return {
+            currentTab: 'Edit',
+            tabs: ['Edit', 'Color','Sound','Graphic','Kurgu ve Color Studio'],
+            scrollPosition: null
+        }
   },
   computed: {
     currentTabComponent() {
-      return 'tab-' + this.currentTab.toLowerCase()
+      return 'tab-' + this.currentTab.split(" ").join("-").toLowerCase()
     }
   },
   methods: {
