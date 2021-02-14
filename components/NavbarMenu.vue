@@ -16,9 +16,10 @@
         <transition name="slide-left">
           <div v-if="isOpen" class="menu z-20 bg-maincolor" :class="isOpen ? '-open':'hidden'"  >
             <ul>
-              <nuxt-link to="/" class="pr-5 text-white">Ana Sayfa</nuxt-link>
-              <nuxt-link to="/about/" class="pr-5 text-white">Hakkımızda</nuxt-link>
-              <nuxt-link to="/contact/" class="text-white">İletişim</nuxt-link>
+              <nuxt-link to="/" class="pr-5 text-white">ana sayfa</nuxt-link>
+              <nuxt-link to="/biz-kimiz/" class="pr-5 text-white">biz kimiz</nuxt-link>
+              <nuxt-link to="/ne-yapiyoruz/" class="pr-5 text-white">ne yapıyoruz</nuxt-link>
+              <nuxt-link to="/contact/" class="text-white">iletişim</nuxt-link>
             </ul>
         </div>
       </transition>

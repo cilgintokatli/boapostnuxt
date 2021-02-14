@@ -1,6 +1,6 @@
 <template>
-    <nav id="nav" class="headerhome mx-auto flex w-full flex-wrap lg:flex-row justify-between items-center py-10 px-12 z-10 relative" :class="{'stickynav':active,'stickynav':otherhead}" >
-      <HeaderLogo :class="{'stickylogo':active, 'stickylogo':otherhead}" /> 
+    <nav id="nav" class="headerhome mx-auto flex w-full flex-wrap lg:flex-row justify-between items-center py-10 px-12 z-10 relative stickynav" >
+      <HeaderLogo  /> 
       <NavbarMenu />
     </nav>
 </template> 

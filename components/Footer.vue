@@ -18,8 +18,11 @@
     <div class="float-left">
       <span class="text-lg text-gray-100">Sosyal Medya</span>
       <div>
-        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="https://www.instagram.com/">Instagram</a><br>
-        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="https://www.facebook.com">Facebook</a>
+        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="http://www.instagram.com/boapostpro">Instagram</a><br>
+        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="http://www.facebook.com/boapostpro">Facebook</a>
+        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="http://twitter.com/boapostpro">Twitter</a>
+        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="https//www.youtube.com/channel/UClRQ-HzM-njEfxbGB7zqGLA">Youtube</a>
+        <a class="text-xs lg:text-xl text-gray-200 inline-block py-1" href="http://www.linkedin.com/company/boapost-production/">Linkedin</a>
       </div>
     </div>
     <div class="float-left">
