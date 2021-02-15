@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="block logo stickylogo" to="/">
-    <img src="~/assets/boalogomin.png" alt="">
+  <nuxt-link class="" to="/">
+    <img class="w-64" src="~/assets/boalogomin.png" alt="boapost logo">
   </nuxt-link> 
 </template>

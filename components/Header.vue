@@ -1,7 +1,10 @@
 <template>
-    <nav id="nav" class="headerhome mx-auto flex w-full flex-wrap lg:flex-row justify-between items-center py-10 px-12 z-10 relative stickynav" >
-      <HeaderLogo  /> 
-      <NavbarMenu />
+    <nav id="nav" class="mx-auto py-10 px-12 z-10 stickynav" >
+      <div class="grid auto-cols-auto	auto-rows-auto items-center justify-items-end" style="grid-template-areas: 'logo menu' ">
+        <HeaderLogo  /> 
+        <NavbarMenu />
+      </div>
+      
     </nav>
 </template> 
 
@@ -17,29 +20,9 @@ export default {
   data() {
     return {
       active: null,
-      otherhead: null,
     }
   },
-  mounted() {
-      if (this.$route.path !== '/') {
-        console.log('burası ana sayfa değil')
-        return this.otherhead = true
-      }
-      else {
-        return this.otherhead = false
-      }
-  },
-  watch: {
-    '$route' () {
-      if (this.$route.path !== '/') {
-        console.log('burası ana sayfa değil')
-        return this.otherhead = true
-      }
-      else {
-        return this.otherhead = false
-      }  
-    }
-  }
+
 }
 </script>
 
