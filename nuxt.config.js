@@ -53,7 +53,9 @@ export default {
       theme: {
         extend: {
           colors: {
-            'maincolor': '#7a2e94'
+            'maincolor': '#762b8b',
+            'sari':'#e7d434',
+            'yesil':'#20ad8f'
           },
           margin: {
             '72':'18rem',
