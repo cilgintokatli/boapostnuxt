@@ -1,7 +1,7 @@
 <template>
     <div class="mb-80">
         <div class="display-block md:text-center lg:text-right mb-10"><nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/ne-yapiyoruz">ne yapıyoruz</nuxt-link></div>
-        <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 gap-4 lg:px-20" >
+        <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 lg:grid-rows-1 gap-4 lg:px-20" >
                 <div class="slides order-2 col-span-3 text-gray-700">
                 <transition
                     mode="out-in"
