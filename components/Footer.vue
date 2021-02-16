@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-10 bg-teal-100 grid grid-cols-2 lg:grid-cols-4 px-12 bg-maincolor t">
+  <footer class="py-10 bg-teal-100 grid grid-cols-2 lg:grid-cols-4 px-12 bg-maincolor bottom-0">
     <div class="float-left">
       <span class="text-lg text-gray-100">İletişim</span>
       <div>
