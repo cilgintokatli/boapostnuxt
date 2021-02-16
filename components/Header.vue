@@ -1,5 +1,5 @@
 <template>
-    <nav id="nav" class="mx-auto py-10 px-12 z-10 stickynav" >
+    <nav class="mx-auto py-10 px-12 z-10 top-0 bg-maincolor stickynav" >
       <div class="grid auto-cols-auto	auto-rows-auto items-center justify-items-end" style="grid-template-areas: 'logo menu' ">
         <HeaderLogo  /> 
         <NavbarMenu />

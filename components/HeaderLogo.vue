@@ -1,5 +1,5 @@
 <template>
   <nuxt-link class="" to="/">
-    <img class="w-64" src="~/assets/boalogomin.png" alt="boapost logo">
+    <img :src="require('~/assets/img/logoheader.png?resize&size=400')" alt="boapost logo">
   </nuxt-link> 
 </template>
