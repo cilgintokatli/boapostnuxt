@@ -1,24 +1,27 @@
 <template>
-    <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 gap-4 lg:px-20 mb-80" >
-            <div class="slides order-2 col-span-3 text-gray-700">
-            <transition
-                mode="out-in"
-                enter-active-class="animate__animated animate__fadeInDown"
-                leave-active-class="animate__animated animate__fadeOutUp"
-            >
-                <NuxtDynamic :name="currentTabComponent" />
-            </transition>
-            </div>
-        <div class="slidenav order-1 lg:col-span-2 grid lg:justify-items-end lg:items-start lg:auto-rows-max">
-            <button v-for="tab in tabs"
-                    :key="tab"
-                    :class="[ { active: currentTab === tab }]"
-                    @click="currentTab = tab"
-                    class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase"
+    <div class="mb-80">
+        <div class="display-block md:text-center lg:text-right mb-10"><nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/ne-yapiyoruz">ne yapıyoruz</nuxt-link></div>
+        <div class="grid grid-cols-1 grid-rows-2 lg:grid-cols-5 gap-4 lg:px-20" >
+                <div class="slides order-2 col-span-3 text-gray-700">
+                <transition
+                    mode="out-in"
+                    enter-active-class="animate__animated animate__fadeInDown"
+                    leave-active-class="animate__animated animate__fadeOutUp"
                 >
-                    {{ tab }}
-               
-            </button>
+                    <NuxtDynamic :name="currentTabComponent" />
+                </transition>
+                </div>
+            <div class="slidenav order-1 lg:col-span-2 grid lg:justify-items-end lg:items-start lg:auto-rows-max">
+                <button v-for="tab in tabs"
+                        :key="tab"
+                        :class="[ { active: currentTab === tab }]"
+                        @click="currentTab = tab"
+                        class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase"
+                    >
+                        {{ tab }}
+                
+                </button>
+            </div>
         </div>
     </div>
 </template>

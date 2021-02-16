@@ -8,6 +8,11 @@
       </div>
     </div>
     <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-1 lg:order-2 self-end">
+      <div class="inline-block">
+        <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
+          <nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>
+        </div>
+      </div>
       <div class="mx-auto" v-block-reveal="{isContentHidden:'true',delay:1000, bgcolor:'#7a2e94'}" >
         <div class="text-2xl lg:text-2xl text-gray-700">
           <p>
@@ -19,11 +24,7 @@ yaratıcı bir süreçten geçecektir.
           </p>
         </div>
       </div>
-      <div class="inline-block">
-        <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
-          <nuxt-link class="cta font-bold text-xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>
-        </div>
-      </div>
+      
     </div>
     </div>
 </template>
