@@ -16,10 +16,10 @@
         <transition name="slide-left">
           <div v-if="isOpen" class="menu z-20 bg-maincolor" :class="isOpen ? '-open':'hidden'"  >
             <ul>
-              <nuxt-link to="/" class="pr-5 text-white">ana sayfa</nuxt-link>
-              <nuxt-link to="/biz-kimiz/" class="pr-5 text-white">biz kimiz</nuxt-link>
-              <nuxt-link to="/ne-yapiyoruz/" class="pr-5 text-white">ne yapıyoruz</nuxt-link>
-              <nuxt-link to="/contact/" class="text-white">iletişim</nuxt-link>
+              <li><nuxt-link to="/" class="pr-5 text-sari font-bold">ana sayfa</nuxt-link></li>
+              <li><nuxt-link to="/biz-kimiz/" class="pr-5 text-sari font-bold">biz kimiz</nuxt-link></li>
+              <li><nuxt-link to="/ne-yapiyoruz/" class="pr-5 text-sari font-bold">ne yapıyoruz</nuxt-link></li>
+              <li><nuxt-link to="/contact/" class="text-sari font-bold">iletişim</nuxt-link></li>
             </ul>
         </div>
       </transition>
@@ -75,8 +75,6 @@ export default {
 .menu {
 
   color: #fff;
-  align-items: center;
-  justify-content: center;
   font-size: 36px;
   position: fixed;
   display: flex;
@@ -93,9 +91,20 @@ export default {
 }
 .menu ul {
   list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
 }
-.menu li {
+.menu ul li a{
   margin: 20px 0;
+  font-size: 2.5em;
+  -webkit-text-stroke: 2px #e7d434;
+}
+
+.menu li a:hover{
+  color: transparent;
 }
 
 
@@ -136,7 +145,7 @@ button:focus{
   transform-origin: center;
 }
 .button.-menu-open svg {
-  stroke: #fff;
+  stroke: #e7d434;
 }
 .button.-menu-open svg g:first-child {
   opacity: 0;
