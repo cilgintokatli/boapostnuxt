@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container ">
     <div>
-      <h1 class="title">
+      <h1 class="text-6xl mt-40 text-yesil text-center font-bold">
         biz kimiz
       </h1>
       <p>
@@ -45,7 +45,6 @@ export default {}
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
 }
 
