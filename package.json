@@ -12,6 +12,7 @@
     "@blokwise/dynamic": "^1.1.0",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "core-js": "^3.8.3",
     "locomotive-scroll": "^4.0.6",
     "nuxt": "^2.14.12",

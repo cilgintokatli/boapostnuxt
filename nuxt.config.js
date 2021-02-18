@@ -64,7 +64,11 @@ export default {
             '80':'20rem'
            }
         }
-      }
+      },
+      plugins: [
+        require('@tailwindcss/aspect-ratio'),
+        // ...
+      ],
     }
   },
 
