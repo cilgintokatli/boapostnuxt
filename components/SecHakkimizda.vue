@@ -10,12 +10,14 @@
         <div class="flex flex-col align-bottom bg-black overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full">
           <div
           v-on:click="isModal = false" 
-          class="modal-close cursor-pointer z-50 py-10 pr-2 absolute right-0">
+          class="modal-close cursor-pointer z-50 pt-5 pr-2 self-end">
             <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18">
               <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
             </svg>
           </div>
-          <iframe src="https://player.vimeo.com/video/513320756" width="100%" height="600px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div class="relative" style="padding-top: 56.25%">
+              <iframe class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/513320756" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
