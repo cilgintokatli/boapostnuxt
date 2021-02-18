@@ -1,7 +1,7 @@
 <template>
-  <div class="container ">
+  <div class="container mx-auto px-10">
     <div>
-      <h1 class="text-6xl mt-40 text-yesil text-center font-bold">
+      <h1 class="text-6xl text-yesil text-center font-bold">
         biz kimiz
       </h1>
       <p>
