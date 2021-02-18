@@ -4,7 +4,8 @@
       <h1 class="text-6xl text-yesil text-center font-bold">
         biz kimiz
       </h1>
-      <p>
+      <div class="text-left text-gray-700 text-xl">
+        <p>
         İnsanlar ikiye ayrılır
         Bir resme baktığında herkesin gördüğünü görenler, bir de görünmeyeni hayal edenler. Tıpkı küçük bir çocuğun çizdiği “şapka” zannedilen resmin aslında “fil yutmuş boa yılanı” olduğunu sadece Küçük Prens’in bilmesi gibi.
       </p>
@@ -23,8 +24,7 @@ post prodüksiyon aşamasının estetiğe olduğu kadar hıza muhtaç bir aşama
       <p>
         BoaPost; yılların deneyimini ve birikimini, kendi bünyesinde kullanmak isteyen; yıllarca fark yaratmak için harcadığı enerjiyi, artık kendi ismiyle aktarmak isteyen; “o şapka değil, fil yutmuş bir boa yılanı” diyenlerin  kurduğu hayalle gerçekleşti. Kendisi gibi düşünen insanlarla da büyümeye devam edecek.
       </p>
-      <nuxt-link class="cta" to="/">go to home </nuxt-link> <div>veya</div>
-      <nuxt-link class="cta" to="/contact">go to contact </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
