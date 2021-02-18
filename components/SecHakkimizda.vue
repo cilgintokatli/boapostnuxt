@@ -1,9 +1,37 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-64">
-    <div class="order-2 lg:order-1 shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
+    <transition name="fade">
+    <div v-show="isModal" class="inset-0 fixed z-30"  >
+      <div class="flex items-end justify-center items-center min-h-screen pt-4 px-4 pb-20 text-center block sm:p-0">
+        <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+        </div>
+        
+        <div class="flex flex-col align-bottom bg-black overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full">
+          <div
+          v-on:click="isModal = false" 
+          class="modal-close cursor-pointer z-50 py-10 pr-2 absolute right-0">
+            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18">
+              <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+            </svg>
+          </div>
+          <iframe src="https://player.vimeo.com/video/513320756" width="100%" height="600px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </transition>
+    <div
+      v-on:click="isModal = true" 
+      class="order-2 lg:order-1 shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl cursor-pointer" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
       <div class="mx-auto py-5 px-5 bg-white w-full">
-          <figure>
-              <img :src="require('~/assets/img/index-biz-kimiz.jpg?resize&size=1000')" alt="boapost biz kimiz">
+          <figure class="relative">
+              <img :src="require('~/assets/img/index-biz-kimiz.jpg?resize&size=1000')" alt="boapost biz kimiz" style="filter: brightness(100%);">
+                <svg
+                class="absolute text-maincolor flex items-center justify-center p-3 opacity-75 hover:opacity-100" style="top:15%;bottom:15%" xmlns="http://www.w3.org/2000/svg" width="100%" height="70%" viewBox="0 0 24 24">
+                  <g fill="#fff"> 
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/>
+                  </g>
+                </svg>
           </figure>
       </div>
     </div>
@@ -31,11 +59,18 @@ yaratıcı bir süreçten geçecektir.
 
 <script>
 export default {
+  data(){
+    return{
+      isModal: false
+    }
+    
+  }
 
 }
 </script>
 
 <style>
+
 .block-revealer {
   position: relative;
 }
@@ -144,6 +179,13 @@ export default {
     top: 50%;
     transform: translate(50%,-50%);
     width: 3px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0
 }
 
 </style>
