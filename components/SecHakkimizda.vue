@@ -15,8 +15,8 @@
               <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
             </svg>
           </div>
-          <div class="aspect-w-16 aspect-h-9">
-              <iframe src="https://player.vimeo.com/video/513320756" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div class="relative" style="padding-bottom:calc((9 / 16) * 100%)">
+              <iframe class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/513320756" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
