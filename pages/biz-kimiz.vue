@@ -30,7 +30,11 @@ post prodüksiyon aşamasının estetiğe olduğu kadar hıza muhtaç bir aşama
 </template>
 
 <script>
-export default {}
+export default {
+    head: {
+      title: 'Biz Kimiz',
+  },
+}
 </script>
 
 <style>

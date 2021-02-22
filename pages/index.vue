@@ -21,6 +21,9 @@ export default {
   components: {
     Hakkimizda,
     Servisler,
+  },
+  head: {
+    title: 'Ana Sayfa',
   }
 
 }

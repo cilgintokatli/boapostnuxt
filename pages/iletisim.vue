@@ -121,6 +121,9 @@ const { validationMixin } = require('vuelidate')
 const { email, minLength, required } = require('vuelidate/lib/validators')
 
 export default {
+    head: {
+      title: 'İletişim',
+  },
   mixins: [validationMixin],
   data () {
     return {
