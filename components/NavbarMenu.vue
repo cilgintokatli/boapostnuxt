@@ -19,7 +19,7 @@
               <li><nuxt-link to="/" class="pr-5 text-sari font-bold">ana sayfa</nuxt-link></li>
               <li><nuxt-link to="/biz-kimiz/" class="pr-5 text-sari font-bold">biz kimiz</nuxt-link></li>
               <li><nuxt-link to="/ne-yapiyoruz/" class="pr-5 text-sari font-bold">ne yapıyoruz</nuxt-link></li>
-              <li><nuxt-link to="/contact/" class="text-sari font-bold">iletişim</nuxt-link></li>
+              <li><nuxt-link to="/iletisim/" class="text-sari font-bold">iletişim</nuxt-link></li>
             </ul>
         </div>
       </transition>
