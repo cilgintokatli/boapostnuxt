@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="px-0 lg:px-10">
     <div class="my-10">
       <form
         v-show="!isSubmitted"
@@ -60,11 +60,6 @@
         </div>
         <div class="md:flex md:items-center">
           <div class="">
-            <button
-              class="lg:hidden mr-4 mt-4 rounded hover:border-yellow transition-all hover:text-yellow px-6 py-3 border border-yellow-dark text-grey-light"
-              @click.prevent="$emit('close')">
-              kapat
-            </button>
             <button
               :class="submitButtonClasses"
               :disabled="submissionDisabled"
