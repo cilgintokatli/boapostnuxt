@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-10 bg-teal-100 grid grid-cols-2 gap-3 lg:grid-cols-3 px-12 bg-maincolor bottom-0">
+  <footer class="py-10 bg-teal-100 grid grid-cols-2 grid-rows-2 gap-3 md:grid-cols-3 md:grid-rows-1 px-12 bg-maincolor bottom-0 mt-auto">
     <div class="float-left">
       <span class="text-lg text-gray-100">İletişim</span>
       <div>
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="float-left grid">
+    <div class="float-left grid col-span-2 md:col-span-1">
       <span class="text-lg text-gray-100">Sosyal Medya</span>
       <div class="grid grid-cols-6 items-end justify-items-start">
         <a href="http://www.facebook.com/boapostpro" class="order-4	">
