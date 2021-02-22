@@ -16,7 +16,7 @@
                         :key="tab"
                         :class="[ { active: currentTab === tab }]"
                         @click="currentTab = tab"
-                        class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase"
+                        class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase text-right"
                     >
                         {{ tab }}
                 
