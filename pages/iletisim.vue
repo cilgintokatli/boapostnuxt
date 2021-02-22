@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="my-10 px-10 lg:px-0">
+    <div class="my-10 px-10 lg:px-0 min-h-screen">
       <form
         v-show="!isSubmitted"
         class=" w-full max-w-lg mx-auto"
