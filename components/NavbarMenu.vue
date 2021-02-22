@@ -15,8 +15,8 @@
         </button>
         <transition name="slide-left">
           <div v-if="isOpen" class="menu z-20 bg-maincolor grid-col-1 md:grid-cols-3" :class="isOpen ? '-open':'hidden'"  >
-            <div class="self-end hidden md:block pb-10 px-8">
-              <img :src="require('~/assets/img/menu-logo.png?resize&size=300')" style="filter: grayscale(1);" alt="boapost menu logo">
+            <div class="self-end justify-self-start hidden md:block pb-10 px-8">
+              <nuxt-link to="/"><img :src="require('~/assets/img/menu-logo.png?resize&size=300')" alt="boapost menu logo"></nuxt-link>
             </div>
             <ul>
               <li><nuxt-link to="/" class="pr-5 text-sari font-bold">ana sayfa</nuxt-link></li>
