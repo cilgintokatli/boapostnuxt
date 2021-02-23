@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-64">
     <transition name="fade">
-    <div v-show="isModal" class="inset-0 fixed z-30"  >
+    <div v-if="isModal" class="inset-0 fixed z-30"  >
       <div class="flex items-end justify-center items-center min-h-screen pt-4 px-4 pb-20 text-center block sm:p-0">
         <div class="fixed inset-0 transition-opacity" aria-hidden="true">
           <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
