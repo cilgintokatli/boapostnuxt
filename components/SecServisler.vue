@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="display-block md:text-center lg:text-right mb-10"><nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/ne-yapiyoruz">ne yapıyoruz</nuxt-link></div>
-        <div class="grid grid-cols-1 grid-rows-2 gap-0 lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 lg:px-20" >
+        <div class="grid grid-cols-1 gap-0 lg:grid-cols-5 grid-rows-1 lg:gap-4 lg:px-20" >
                 <div class="slides order-2 col-span-3 text-gray-700">
                 <transition
                     mode="out-in"
@@ -11,16 +11,16 @@
                     <NuxtDynamic :name="currentTabComponent" />
                 </transition>
                 </div>
-            <div class="slidenav order-1 lg:col-span-2 grid lg:justify-items-end lg:items-start lg:auto-rows-max">
-                <button v-for="tab in tabs"
+            <div class="slidenav mb-10 lg:mb-0 order-1 lg:col-span-2 grid lg:justify-items-end lg:items-start gap-4 lg:gap-0 auto-rows-auto lg:auto-rows-max">
+                <div v-for="tab in tabs"
                         :key="tab"
                         :class="[ { active: currentTab === tab }]"
                         @click="currentTab = tab"
-                        class="block lg:gap-4 text-gray-900 font-light text-2xl lg:text-5xl underlined underlined--tick lowercase text-right"
+                        class="block lg:text-right text-center lg:gap-4 text-gray-900 font-light text-xl lg:text-5xl underlined underlined--tick lowercase cursor-pointer	"
                     >
                         {{ tab }}
                 
-                </button>
+                </div>
             </div>
         </div>
     </div>
@@ -65,6 +65,14 @@ export default {
     background-repeat: no-repeat;
     transition: background 0.5s;
 }
+@media (max-width: 1024px) {
+    .underlined{
+        background-position: 0 0em;
+    }
+    .underlined:hover, .underlined.active{
+        color:white;
+    }
+ }
 .underlined--thick {
     background-position: 0 -0.1em;
 }
