@@ -24,12 +24,12 @@
     </transition>
     <div
       v-on:click="isModal = true" 
-      class="order-2 lg:order-1 shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl cursor-pointer" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
+      class="order-1 grid align-center shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl cursor-pointer" v-block-reveal="{isContentHidden:'true', delay:700, bgcolor:'#4cae90', direction: 'rl'}">
       <div class="mx-auto py-5 px-5 bg-white w-full">
           <figure class="relative">
               <img :src="require('~/assets/img/index-biz-kimiz.jpg?resize&size=1000')" alt="boapost biz kimiz" style="filter: brightness(100%);">
                 <svg
-                class="absolute text-maincolor flex items-center justify-center p-3 opacity-75 hover:opacity-100" style="top:15%;bottom:15%" xmlns="http://www.w3.org/2000/svg" width="100%" height="70%" viewBox="0 0 24 24">
+                class="absolute text-maincolor flex items-center justify-center p-8 top-0 opacity-0 hover:opacity-100 hover:bg-black hover:bg-opacity-50 transition duration-500" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
                   <g fill="#fff"> 
                     <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/>
                   </g>
@@ -37,7 +37,7 @@
           </figure>
       </div>
     </div>
-    <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-1 lg:order-2 self-end">
+    <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-2 self-end">
       <div class="inline-block">
         <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
           <nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>
