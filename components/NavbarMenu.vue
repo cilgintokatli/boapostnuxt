@@ -16,7 +16,7 @@
         <transition name="slide-left">
           <div v-if="isOpen" class="menu z-20 bg-maincolor grid-col-1 md:grid-rows-3 md:grid-cols-1" :class="isOpen ? '-open':'hidden'"  >
             <div class="self-end justify-self-center hidden md:block pb-10 px-8">
-              <nuxt-link to="/"><img :src="require('~/assets/img/menu-logo.png?resize&size=170')" alt="boapost menu logo"></nuxt-link>
+              <nuxt-link to="/"><img :src="require('~/assets/img/logoheader.png?resize&size=370')" alt="boapost menu logo"></nuxt-link>
             </div>
             <ul class="flex-col md:flex-row">
               <li><nuxt-link to="/biz-kimiz/" class="pr-0 md:pr-10 text-sari font-bold">biz kimiz</nuxt-link></li>
