@@ -24,8 +24,10 @@
               <li><nuxt-link to="#" class="pr-0 md:pr-10 text-sari font-bold">ekip</nuxt-link></li>
               <li><nuxt-link to="/iletisim/" class="text-sari font-bold">iletişim</nuxt-link></li>
             </ul>
-            <div class="self-end justify-center hidden md:grid grid-cols-2 pb-10 px-12">
-              <div class="grid grid-cols-6 gap-4 items-end justify-items-end col-start-2">
+            <div class="self-end justify-center hidden md:grid grid-cols-3 pb-10 px-12">
+              <div class="text-sari">info@boapost.com</div>
+              <div class="justify-self-center text-sari">© boapost 2021</div>
+              <div class="grid grid-cols-6 gap-4 items-end justify-items-end">
                 <a href="http://www.facebook.com/boapostpro" class="order-4	">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                     <g fill="#e7d434" stroke="none">
