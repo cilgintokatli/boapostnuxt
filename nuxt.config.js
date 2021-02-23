@@ -32,7 +32,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-optimized-images'
+    '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/pwa',
   ],
   optimizedImages: {
     optimizeImages: true
@@ -73,7 +74,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'tr'
     }
   },
 
