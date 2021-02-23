@@ -9,7 +9,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -73,6 +73,9 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon:{
+      fileName: 'iconv2.png'
+    },
     manifest: {
       lang: 'tr'
     }
