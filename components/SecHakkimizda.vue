@@ -37,7 +37,7 @@
           </figure>
       </div>
     </div>
-    <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-2 self-end">
+    <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-2">
       <div class="inline-block">
         <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
           <nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>

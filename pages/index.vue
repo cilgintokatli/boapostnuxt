@@ -1,12 +1,12 @@
 <template>
 
-  <div class="py-10 px-16 ">
-    <section>
-      <Hakkimizda class="min-h-screen flex"/>
+  <div class="py-10 px-16">
+    <section class="min-h-screen flex">
+      <Hakkimizda  />
     </section>
     <transition name="fade" mode="out-in" appear>
-    <section>
-      <Servisler class="min-h-screen fllex" />
+    <section class="min-h-screen flex">
+      <Servisler />
     </section>
     </transition>
   </div>
