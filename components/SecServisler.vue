@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="display-block text-center lg:text-right mb-10"><nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/ne-yapiyoruz">ne yapıyoruz</nuxt-link></div>
+        <div class="display-block text-center lg:text-right mb-10"><nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/ne-yapiyoruz">ne yapıyoruz?</nuxt-link></div>
         <div class="grid grid-cols-1 gap-0 lg:grid-cols-5 grid-rows-1 lg:gap-4 lg:px-20" >
                 <div class="slides order-2 col-span-3 text-gray-700">
                 <transition

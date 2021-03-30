@@ -40,7 +40,7 @@
     <div class="flex flex-col mx-auto text-center py-10 lg:text-right order-2">
       <div class="inline-block">
         <div class="inline-block" v-block-reveal="{ delay: 1150, direction:'rl'}" >
-          <nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz</nuxt-link>
+          <nuxt-link class="cta font-bold text-3xl text-black lg:text-4xl" to="/biz-kimiz">biz kimiz?</nuxt-link>
         </div>
       </div>
       <div class="mx-auto" v-block-reveal="{isContentHidden:'true',delay:1000, bgcolor:'#7a2e94'}" >
