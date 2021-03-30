@@ -16,7 +16,7 @@
                         :key="tab"
                         :class="[ { active: currentTab === tab }]"
                         @click="currentTab = tab"
-                        class="block lg:text-right text-center lg:gap-4 text-gray-900 font-light text-xl lg:text-5xl underlined underlined--tick lowercase cursor-pointer	"
+                        class="block lg:text-right text-center lg:gap-4 text-gray-900 font-light text-xl lg:text-5xl underlined underlined--tick lowercase cursor-pointer und-bg-mor"
                     >
                         {{ tab }}
                 
@@ -59,12 +59,22 @@ export default {
 .underlined {
     line-height: 1.2;
     text-decoration: none;
-    background-image: linear-gradient(to right, #7a2e94 0, #7a2e94 100%);
-    background-position: 0 0.3em;
+    background-position: 0 0em;
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background 0.5s;
 }
+
+.underlined:nth-child(3n+1){
+    background-image: linear-gradient(to right, #7a2e94 0, #7a2e94 100%);
+}
+.underlined:nth-child(3n+2){
+    background-image: linear-gradient(to right, #e7d434 0, #e7d434 100%);
+}
+.underlined:nth-child(3n+3){
+    background-image: linear-gradient(to right, #20ad8f 0, #20ad8f 100%);
+}
+
 @media (max-width: 1024px) {
     .underlined{
         background-position: 0 0em;

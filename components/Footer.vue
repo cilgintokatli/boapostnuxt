@@ -17,7 +17,7 @@
 
     <div class="float-left grid col-span-2 md:col-span-1">
       <span class="text-sm text-gray-100 mb-8">Sosyal Medya</span>
-      <div class="grid grid-cols-6 items-end justify-items-start">
+      <div class="grid grid-cols-3 grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 items-end  lg:justify-items-start gap-5">
         <a href="http://www.facebook.com/boapostpro" class="order-4	">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
             <g fill="#1877F2" stroke="none">
