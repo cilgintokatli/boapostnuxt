@@ -2,7 +2,7 @@
   <div class="container mx-auto px-10">
     <div>
       <h1 class="text-6xl text-yesil text-center font-bold">
-        ne yapıyoruz
+        ne yapıyoruz?
       </h1>
       <div class="text-left mb-20"> 
         <h3 class="text-yesil text-5xl">Edit</h3>
