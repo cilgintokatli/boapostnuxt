@@ -12,7 +12,7 @@
               <li class="lg:hidden"><nuxt-link to="/" class="pr-0 text-sari font-bold">ana sayfa</nuxt-link></li>
               <li><nuxt-link to="/biz-kimiz/" class="pr-0 text-sari font-bold">biz kimiz?</nuxt-link></li>
               <li><nuxt-link to="/ne-yapiyoruz/" class="pr-0 text-sari font-bold">ne yapıyoruz?</nuxt-link></li>
-              <li><nuxt-link to="/neler-yaptik/" class="pr-0 text-sari font-bold">neler yaptık?</nuxt-link></li>
+              <li><nuxt-link to="#" class="pr-0 text-sari font-bold">neler yaptık?</nuxt-link></li>
               <li><nuxt-link to="/iletisim/" class="text-sari font-bold">iletişim</nuxt-link></li>
             </ul>
             <div class="self-end justify-center hidden md:grid grid-cols-1 pb-10 px-12">
@@ -226,6 +226,8 @@ button:focus{
   margin: 7px 0;
   transition: all .2s ease-in-out;
 }
+
+
 .button.-menu-open .nav-icon:before {
   transform: translateY(12px) rotate(135deg);
 }
