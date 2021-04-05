@@ -19,6 +19,7 @@
     "nuxt": "^2.14.12",
     "validator": "^13.5.2",
     "vue-block-reveal": "^1.0.0",
+    "vue-js-modal": "^2.0.0-rc.6",
     "xss-filters": "^1.2.7"
   },
   "devDependencies": {
