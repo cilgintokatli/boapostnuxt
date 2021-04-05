@@ -1,18 +1,11 @@
 <template>
     <div class="flex">
         <button @click="toggle" class="button" :class="isOpen ? '-menu-open':'hidden'">
-          <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <line x1="0" y1="17" x2="48" y2="17" stroke-width="7" />
-              <line x1="0" y1="31" x2="48" y2="31" stroke-width="7" />
-            </g>
-            
-            <g>
-              <line x1="0" y1="24" x2="48" y2="24" stroke-width="7" />
-              <line x1="0" y1="24" x2="48" y2="24" stroke-width="7" />
-            </g>
-          </svg>
+          <div class="nav-icon">
+            <div></div>
+          </div>
         </button>
+        
         <transition name="slide-left">
           <div v-if="isOpen" class="menu shadow-2xl z-20 bg-maincolor grid-col-1 md:grid-rows-2 md:grid-cols-1 md:w-1/3 w-full pt-40" :class="isOpen ? '-open':'hidden'"  >
             <ul class="flex-col md:flex-col items-center px-0 lg:items-end lg:px-12">
@@ -167,7 +160,7 @@ button:focus{
 }
 
 .button svg {
-  stroke: #000;
+  stroke: #e7d434;
   transition: 0.2s;
 }
 .button svg g:first-child {
@@ -215,5 +208,35 @@ button:focus{
 .button.-menu-open svg g:last-child line:last-child {
   transform: rotate(-45deg);
 }
+
+
+.nav-icon {
+  margin: 1em;
+  width: 60px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color:#e7d434;
+  border-radius: 1px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all .2s ease-in-out;
+}
+.button.-menu-open .nav-icon:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.button.-menu-open .nav-icon:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.button.-menu-open .nav-icon div {
+  transform: scale(0);
+}
+
 
 </style>
