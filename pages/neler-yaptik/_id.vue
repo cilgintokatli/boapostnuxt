@@ -14,7 +14,7 @@
             </svg>
           </nuxt-link>
             <client-only>
-                <vimeo-player ref="player" :video-id="videoID"/>
+                <vimeo-player ref="player" :video-id="videoID"  />
             </client-only>	
         </div>
       </div>
@@ -30,8 +30,24 @@ export default {
   ],
     data() {
         return {
-            videoID: this.$route.params.id
+            videoID: this.$route.params.id,
+            
         }
     }
 }
 </script>
+
+<style>
+
+iframe {
+  width:100%
+}
+@media (min-width: 768px){
+
+    iframe  {
+      width:640px!important;
+  }
+}
+
+
+</style>>
