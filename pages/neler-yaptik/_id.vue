@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class="inset-0 fixed z-30" @click.self="console.log('clicked mı vallah')" >
+    <div class="inset-0 fixed z-50" @click.self="console.log('clicked mı vallah')" >
       <div  class="grid place-items-center min-h-screen pt-4 pb-20 text-center block sm:p-0">
         <div  class="fixed inset-0 transition-opacity" aria-hidden="true">
           <div class="absolute inset-0 bg-black opacity-20" style="opacity:0.2"></div>
