@@ -20,15 +20,10 @@
 
 
 export default {
-  head(){
-      return {
-        title: 'Neler Yaptık?'
-      }
-    },
+
   data(){
     return{
       videos: [],
-      selectedItem: {}
     }
   },
   async mounted() {
@@ -37,14 +32,12 @@ export default {
       this.$axios.setToken('5e2f0b63d81b85ee46efc12cabd07fed', 'Bearer')
       const res = await this.$axios.get(`https://api.vimeo.com/me/videos`)
       const results = res.data.data
-      console.log(results)
       console.timeEnd('timer')
 
       this.videos = results.map(data => ({
         name: data.name,
         img: data.pictures.sizes[4].link,
         id: data.link.replace('https://vimeo.com/',''),
-        embed: data.embed.html,
       }))
       
     }
@@ -59,11 +52,13 @@ export default {
           console.log("Client Error:", err)
         }
       }
-    }
+    },
+    head(){
+      return {
+        title: 'Neler Yaptık?'
+      }
+    },
  
-   
- 
-
 }
 </script>
 
