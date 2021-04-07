@@ -210,9 +210,7 @@ button:focus{
 }
 
 
-.nav-icon {
-  
-}
+
 
 .nav-icon:after, 
 .nav-icon:before, 

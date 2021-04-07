@@ -11,9 +11,6 @@
           </div>
       </div>
        <nuxt-child :key="$route.params.id" ></nuxt-child>
-      <modal name="my-first-modal" :adaptive="true">
-        <div v-html="selectedItem.embed"></div>
-    </modal>
   </div>
 </template>
 
@@ -29,15 +26,6 @@ export default {
       selectedItem: {}
     }
   },
-methods: {
-        show (video) {
-            this.selectedItem = video;
-            this.$modal.show('my-first-modal');
-        },
-        hide () {
-            this.$modal.hide('my-first-modal');
-        }
-    },
   async mounted() {
     try {
       console.time('timer')
