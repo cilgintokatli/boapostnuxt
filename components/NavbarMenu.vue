@@ -1,7 +1,7 @@
 <template>
     <div class="flex">
         <button @click="toggle" class="button" :class="isOpen ? '-menu-open':'hidden'">
-          <div class="nav-icon">
+          <div class="nav-icon w-12	lg:w-14 pl-2 lg:pl-0">
             <div></div>
           </div>
         </button>
@@ -211,8 +211,7 @@ button:focus{
 
 
 .nav-icon {
-  margin: 1em;
-  width: 60px;
+  
 }
 
 .nav-icon:after, 
