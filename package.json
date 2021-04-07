@@ -20,6 +20,7 @@
     "validator": "^13.5.2",
     "vue-block-reveal": "^1.0.0",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-vimeo-player": "git+https://github.com/dobromir-hristov/vue-vimeo-player.git#master",
     "xss-filters": "^1.2.7"
   },
   "devDependencies": {
