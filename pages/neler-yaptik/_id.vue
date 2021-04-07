@@ -14,6 +14,7 @@
             </svg>
           </nuxt-link>
             <client-only>
+              
                 <vimeo-player ref="player" :video-id="videoID"  />
             </client-only>	
         </div>
@@ -26,12 +27,18 @@
 <script>
 export default {
     props: [
-    'vimeoID'
+    'pTitle'
   ],
     data() {
         return {
             videoID: this.$route.params.id,
+            videoTitle: this.$route.params.pTitle
         }
+    },
+    head(){
+      return {
+        title: this.videoTitle
+      }
     }
 }
 </script>

@@ -5,7 +5,7 @@
       </h1>
       <div class="vimeos gap-8">
           <div v-for="(video, index) in videos" :key="index"> 
-            <span> <nuxt-link :to="`${video.id}`" ><img :src="video.img" class="mb-3"></nuxt-link>  </span>
+            <span> <nuxt-link :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name} }" ><img :src="video.img" class="mb-3"></nuxt-link>  </span>
             <span class="font-bold mt-4">{{ video.name }}</span>
              
           </div>
@@ -20,6 +20,11 @@
 
 
 export default {
+  head(){
+      return {
+        title: 'Neler Yaptık?'
+      }
+    },
   data(){
     return{
       videos: [],
