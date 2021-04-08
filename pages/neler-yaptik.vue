@@ -30,11 +30,10 @@ export default {
     try {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
-      const res = await this.$axios.$get(`https://api.vimeo.com/me/videos`)
-      const results = res.data
+      const res = (await this.$axios.$get(`https://api.vimeo.com/me/videos`)).data
       console.timeEnd('timer')
 
-      this.videos = results.map(data => ({
+      this.videos = res.map(data => ({
         name: data.name,
         img: data.pictures.sizes[4].link,
         id: data.link.replace('https://vimeo.com/',''),
