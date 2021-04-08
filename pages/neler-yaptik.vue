@@ -30,8 +30,8 @@ export default {
     try {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
-      const res = await this.$axios.get(`https://api.vimeo.com/me/videos`)
-      const results = res.data.data
+      const res = await this.$axios.$get(`https://api.vimeo.com/me/videos`)
+      const results = res.data
       console.timeEnd('timer')
 
       this.videos = results.map(data => ({
