@@ -29,7 +29,7 @@ export default {
   async mounted() {
     try {
       console.time('timer')
-      this.$axios.setToken('5e2f0b63d81b85ee46efc12cabd07fed', 'Bearer')
+      this.$axios.setToken(VIMEO_TOKEN, 'Bearer')
       const res = await this.$axios.get(`https://api.vimeo.com/me/videos`)
       const results = res.data.data
       console.timeEnd('timer')
