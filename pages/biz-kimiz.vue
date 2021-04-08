@@ -2,7 +2,7 @@
   <div class="container mx-auto px-10">
     <div>
       <h1 class="text-6xl text-yesil text-center font-bold">
-        biz kimiz?
+        <span>biz kimiz</span><span style="font-family: Arial, serif;">?</span>
       </h1>
       <div class="text-left text-gray-700 text-xl">
         <p>
