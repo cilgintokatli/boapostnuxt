@@ -1,7 +1,7 @@
 <template>
-  <div class="grid gap-0 lg:gap-5 grid-cols-1 grid-auto-auto items-center justify-items-center px-10">
+  <div class="grid gap-0 lg:gap-5 grid-cols-1 items-center justify-items-center px-10">
       <h1 class="text-6xl text-yesil text-center font-bold">
-        neler yaptık?
+        <span>neler yaptık</span><span style="font-family: Arial, serif;">?</span>
       </h1>
       <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
           <div v-for="(video, index) in videos" :key="index"> 
@@ -23,9 +23,20 @@ export default {
   data(){
     return{
       videos: [],
+      title: 'neler yaptık?',
     }
   },
+  computed: {
+    baslik: function(){
+      return this.title.slice(0, -1)
+    }
+    
+  },
+
   async mounted() {
+    const baslik = [...this.title];
+    const soru = baslik.pop()
+    console.log(soru)
     try {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
