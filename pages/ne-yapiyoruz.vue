@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-10">
     <div>
-      <h1 class="text-6xl text-yesil text-center font-bold">
+      <h1 class="text-3xl my-5 lg:text-6xl text-yesil text-center font-bold">
         ne yapıyoruz?
       </h1>
       <div class="text-left mb-20"> 

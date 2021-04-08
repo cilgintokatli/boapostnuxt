@@ -1,6 +1,6 @@
 <template>
   <div class="grid gap-0 lg:gap-5 grid-cols-1 items-center justify-items-center px-10">
-      <h1 class="text-6xl text-yesil text-center font-bold">
+      <h1 class="text-3xl my-5 lg:text-6xl text-yesil text-center font-bold">
         neler yaptık?
       </h1>
       <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
