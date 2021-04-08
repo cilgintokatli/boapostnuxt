@@ -15,7 +15,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/css/HurmeGeometricSans.css',
+    '~/assets/css/futura.css',
     '~/assets/css/body.css'
   ],
 

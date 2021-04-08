@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-0 lg:gap-5 grid-cols-1 items-center justify-items-center px-10">
       <h1 class="text-6xl text-yesil text-center font-bold">
-        <span>neler yaptık</span><span style="font-family: Arial, serif;">?</span>
+        neler yaptık?
       </h1>
       <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
           <div v-for="(video, index) in videos" :key="index"> 
