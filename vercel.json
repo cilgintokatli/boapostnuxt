@@ -1,11 +1,17 @@
 {
     "version": 2,
+    "env": {
+      "VIMEO_TOKEN": true
+    },
     "builds": [
       {
         "src": "nuxt.config.js",
         "use": "@nuxtjs/vercel-builder",
         "config": {
           "serverFiles": ["package.json"]
+        },
+        "env": {
+          "VIMEO_TOKEN": true
         }
       }
     ],
