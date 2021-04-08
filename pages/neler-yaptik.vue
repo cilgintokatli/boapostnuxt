@@ -34,14 +34,10 @@ export default {
   },
 
   async mounted() {
-    const baslik = [...this.title];
-    const soru = baslik.pop()
-    console.log(soru)
     try {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
       const res = (await this.$axios.$get(`https://api.vimeo.com/me/videos`)).data
-      res.pop()
       console.timeEnd('timer')
 
       this.videos = res.map(data => ({
