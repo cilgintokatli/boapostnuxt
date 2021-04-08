@@ -1,13 +1,12 @@
 <template>
-  <div class="containet mx-auto px-10">
+  <div class="grid gap-0 lg:gap-5 grid-cols-1 grid-auto-auto items-center justify-items-center px-10">
       <h1 class="text-6xl text-yesil text-center font-bold">
         neler yaptık?
       </h1>
-      <div class="vimeos gap-8">
+      <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
           <div v-for="(video, index) in videos" :key="index"> 
-            <span> <nuxt-link :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name} }" ><img :src="video.img" class="mb-3"></nuxt-link>  </span>
+            <div class="p-3 bg-white mb-3 rounded-2xl scale-100 lg:scale-95 lg:hover:scale-100 shadow-lg hover:shadow-xl transform transition duration-500"> <nuxt-link :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name} }" ><img :src="video.img" class="rounded-lg "></nuxt-link>  </div>
             <span class="font-bold mt-4">{{ video.name }}</span>
-             
           </div>
       </div>
        <nuxt-child :key="$route.params.id" ></nuxt-child>
@@ -31,6 +30,7 @@ export default {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
       const res = (await this.$axios.$get(`https://api.vimeo.com/me/videos`)).data
+      res.pop()
       console.timeEnd('timer')
 
       this.videos = res.map(data => ({
@@ -62,12 +62,16 @@ export default {
 </script>
 
 <style>
+@media (min-width: 768px){
+.grid-auto-auto {
+   grid-template-columns: auto auto;
+ }
+}
+ 
 .vimeos{
   display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: min-content;;
-    margin-top: 40px;
+    margin: 40px 0 40px 0;
 }
 
 </style>
