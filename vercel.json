@@ -1,13 +1,5 @@
 {
     "version": 2,
-    "env": {
-      "VIMEO_TOKEN": true
-    },
-    "build": {
-      "env": {
-        "VIMEO_TOKEN": true
-      }
-    },
 
     "builds": [
       {
