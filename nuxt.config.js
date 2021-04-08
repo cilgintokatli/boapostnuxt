@@ -85,5 +85,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  env: {
+    VIMEO_TOKEN: process.env.NUXT_ENV_VIMEO_TOKEN
+  },
 }
