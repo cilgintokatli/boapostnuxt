@@ -226,8 +226,8 @@ export default {
       },
     ],
     pins: {
-      selected: require(`~/assets/img/icon.png?resize&size=150`),
-      notSelected: require(`~/assets/img/icon.png?resize&size=150`)
+      selected: require(`~/assets/img/marker.png`),
+      notSelected: require(`~/assets/img/marker.png`)
     },
     mapStyle: 
 
