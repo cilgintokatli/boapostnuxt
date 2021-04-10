@@ -1,9 +1,9 @@
 <template>
     <div>
         <p class="text-xl mb-10">
-Kurgu; Çekilen görüntülerin senaryoya uygun şekilde, içinde çeşitli değişkenler barındıran matematiksel bir örgüyle kurulması/dizilmesi işidir.
+Kurgu; çekilen görüntülerin senaryoya uygun şekilde, içinde çeşitli değişkenler barındıran matematiksel bir örgüyle kurulması/dizilmesi işidir.
 
-boapost; Profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.        </p>
+Boapost; profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.        </p>
         <figure>
             <img :src="require('~/assets/img/edit.jpg?resize&size=700')" alt />
         </figure>
