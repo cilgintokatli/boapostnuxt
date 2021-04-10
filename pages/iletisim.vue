@@ -81,7 +81,7 @@
           Bir hata meydana geldi!
         </div>
       </div>
-      <div class="grid lg:content-end gap-3 lg:gap-12 order-1 lg:order-2">
+      <div class="grid lg:content-evenly gap-3 lg:gap-12 order-1 lg:order-2">
         <div class="">
           <h2 class="text-4xl">iletişim</h2>
           <p>0 (216) 505 38 51</p>
@@ -221,13 +221,13 @@ export default {
       circleOptions: {},
       locations: [ 
       {
-        lat: 41.02419417220975,
-        lng: 29.080099644481933
+        lat: 41.02360430603689,
+        lng: 29.078303905523818
       },
     ],
     pins: {
-      selected: require(`~/assets/img/favicon-32x32.png`),
-      notSelected: require(`~/assets/img/favicon-32x32.png`)
+      selected: require(`~/assets/img/icon.png?resize&size=150`),
+      notSelected: require(`~/assets/img/icon.png?resize&size=150`)
     },
     mapStyle: 
 
