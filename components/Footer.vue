@@ -3,7 +3,7 @@
     <div class="float-left grid">
       <span class="text-sm text-gray-100 mb-8">İletişim</span>
       <div class="self-end">
-        <a class="text-xs lg:text-base text-gray-200 inline-block" href="tel:+9021621626">0(216) 505 38 51</a><br>
+        <a class="text-xs lg:text-base text-gray-200 inline-block" href="tel:+9021621626">0 (216) 505 38 51</a><br>
         <a class="text-xs lg:text-base text-gray-200 inline-block" href="mailto:info@boapost.com">info@boapost.com</a>
       </div>
     </div>
@@ -11,7 +11,7 @@
     <div class="float-left grid">
       <span class="text-sm text-gray-100 mb-8">Adres</span>
       <div class="self-end">
-        <a class="text-xs lg:text-base text-gray-200 inline-block" >Kısıklı Mah. Alemdağ Yanyolu Cad. SBK İş Merkezi No:5 Daire: 6 Üsküdar/İstanbul</a>
+        <a class="text-xs lg:text-base text-gray-200 inline-block" >Kısıklı Mah. Alemdağ Yanyolu Cad. SBK İş Merkezi No:5/6 Üsküdar/İstanbul</a>
       </div>
     </div>
 

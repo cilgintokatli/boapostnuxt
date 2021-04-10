@@ -6,7 +6,7 @@
       </h1>
       <div class="text-left text-gray-700 text-xl">
         <p>
-        İnsanlar ikiye ayrılır
+        İnsanlar ikiye ayrılır.
         Bir resme baktığında herkesin gördüğünü görenler, bir de görünmeyeni hayal edenler. Tıpkı küçük bir çocuğun çizdiği “şapka” zannedilen resmin aslında “fil yutmuş boa yılanı” olduğunu sadece Küçük Prens’in bilmesi gibi.
       </p>
       <p>

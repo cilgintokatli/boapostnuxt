@@ -9,14 +9,14 @@
             <p>
             Kurgu; çekilen görüntülerin senaryoya uygun şekilde, içinde çeşitli değişkenler barındıran matematiksel bir örgüyle kurulması/dizilmesi işidir.
 
-            Boabost; profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.
+            Boapost; profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.
             </p>
 
         <h3 class="text-yesil text-5xl">Color</h3>
             <p>
             Görsel dünyada atmosfer yaratmanın en önemli etkenlerinden biri renktir. Sinema ve video endüstrisinde içeriğin renk atmosferinin yaratılması temel dallardan biridir.
 
-            Boabost; renk düzenlemesi için özel tasarlanmış stüdyosunda, profesyonel ekip ve ekipmanlarıyla, endüstri ihtiyaçlarına, içeriğin türüne ve içerik üreticisinin taleplerine göre, içeriklerin renk düzenlemesini yapar.
+            Boapost; renk düzenlemesi için özel tasarlanmış stüdyosunda, profesyonel ekip ve ekipmanlarıyla, endüstri ihtiyaçlarına, içeriğin türüne ve içerik üreticisinin taleplerine göre, içeriklerin renk düzenlemesini yapar.
             </p>
 
         <h3 class="text-yesil text-5xl">Sound</h3>
