@@ -17,6 +17,7 @@
     "locomotive-scroll": "^4.0.6",
     "nodemailer": "^6.4.18",
     "nuxt": "^2.14.12",
+    "nuxt-gmaps": "^1.2.10",
     "validator": "^13.5.2",
     "vue-block-reveal": "^1.0.0",
     "vue-js-modal": "^2.0.0-rc.6",

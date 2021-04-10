@@ -47,7 +47,11 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@blokwise/dynamic'
+    '@blokwise/dynamic',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyA_O3rJlpg0169rZD-tDlm7j5U0j3ik5X4',
+      //you can use libraries: ['places']
+    }]
     
   ],
   tailwindcss: {
