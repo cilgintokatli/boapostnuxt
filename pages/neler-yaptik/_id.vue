@@ -1,9 +1,9 @@
 <template>
       
-        <div class="inset-0 fixed z-50" @click.self="console.log('clicked mı vallah')" >
+        <div class="inset-0 fixed z-50">
           <div  class="grid place-items-center min-h-screen pt-4 pb-20 text-center block sm:p-0">
             <div  class="fixed inset-0 transition-opacity" aria-hidden="true">
-              <div class="absolute inset-0 bg-black opacity-20" style="opacity:0.2"></div>
+              <div class="absolute inset-0 bg-black opacity-20" style="opacity:0.2" @click.self="$router.push('/neler-yaptik/')" ></div>
             </div>
             <transition name="slide-upp" appear>
             <div class="bg-black rounded-3xl z-50 shadow-xl relative ">

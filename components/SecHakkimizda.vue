@@ -7,7 +7,7 @@
           <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
         </div>
         
-        <div class="bg-black rounded-3xl z-50 shadow-xl relative">
+        <div class="bg-black rounded-3xl z-50 shadow-xl relative" @click.self="$router.push('/')" >
           <div
           v-on:click="isModal = false" 
           class="modal-close cursor-pointer z-50 absolute">
