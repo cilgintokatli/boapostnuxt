@@ -3,7 +3,7 @@
         <p class="text-xl mb-10">
 Kurgu; Çekilen görüntülerin senaryoya uygun şekilde, içinde çeşitli değişkenler barındıran matematiksel bir örgüyle kurulması/dizilmesi işidir.
 
-boabost; Profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.        </p>
+boapost; Profesyonel ekip ve yeni nesil ekipmanlarıyla drama, belgesel, reklam, tanıtım ve dijital içeriklerin kurgusunu yapar.        </p>
         <figure>
             <img :src="require('~/assets/img/edit.jpg?resize&size=700')" alt />
         </figure>
