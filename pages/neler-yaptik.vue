@@ -10,6 +10,7 @@
           </div>
       </div>
        <nuxt-child :key="$route.params.id" ></nuxt-child>
+       <LoadScreen v-if="showHideSpinner" />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ export default {
     return{
       videos: [],
       title: 'neler yaptık?',
+      showHideSpinner: true
     }
   },
   computed: {
@@ -32,8 +34,11 @@ export default {
     }
     
   },
-
+  beforeCreate() {
+    this.showHideSpinner = true;
+  },
   async mounted() {
+    
     try {
       console.time('timer')
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
@@ -58,6 +63,7 @@ export default {
           console.log("Client Error:", err)
         }
       }
+      this.showHideSpinner = false;
     },
     head(){
       return {
