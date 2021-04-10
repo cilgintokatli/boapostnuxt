@@ -2,22 +2,23 @@
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center content-center">
     <transition name="fade">
     <div v-if="isModal" class="inset-0 fixed z-30"  >
-      <div class="flex items-end justify-center items-center min-h-screen pt-4 px-4 pb-20 text-center block sm:p-0">
+      <div class="grid place-items-center min-h-screen pt-4 pb-20 text-center block sm:p-0">
         <div class="fixed inset-0 transition-opacity" aria-hidden="true">
           <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
         </div>
         
-        <div class="flex flex-col align-bottom bg-black rounded-3xl p-5 z-50 overflow-hidden shadow-xl sm:my-8 sm:align-middle sm:max-w-3xl w-full">
+        <div class="bg-black rounded-3xl z-50 shadow-xl relative">
           <div
           v-on:click="isModal = false" 
-          class="modal-close cursor-pointer z-50 pr-2 self-end">
-            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18">
+          class="modal-close cursor-pointer z-50 absolute">
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18">
               <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
             </svg>
           </div>
-          <div class="relative" style="padding-bottom:calc((9 / 16) * 100%)">
-              <iframe class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/513320756" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <client-only>
+                    <vimeo-player ref="player" :video-id="513320756"  />
+          </client-only>	
+          
         </div>
       </div>
     </div>
@@ -188,6 +189,26 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0
+}
+
+.modal-close {
+  top:-3em;
+  right: 0px;
+}
+iframe {
+  width:100%
+}
+
+@media (min-width: 768px){
+  .modal-close {
+    top: 0px!important;;
+    right: -3rem!important;
+
+  }
+
+    iframe  {
+      width:640px!important;
+    }
 }
 
 </style>
