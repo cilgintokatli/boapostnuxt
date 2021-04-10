@@ -49,7 +49,7 @@ export default {
     '@nuxtjs/pwa',
     '@blokwise/dynamic',
     ['nuxt-gmaps', {
-      key: 'AIzaSyA_O3rJlpg0169rZD-tDlm7j5U0j3ik5X4',
+      key: 'AIzaSyBfZTN_z-6tPfqH7r9p3bTG7nD9ypqv10c',
       //you can use libraries: ['places']
     }]
     
