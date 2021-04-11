@@ -5,7 +5,14 @@
       </h1>
       <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
           <div v-for="(video, index) in videos" :key="index"> 
-            <div class="p-3 bg-white mb-3 rounded-2xl scale-100 lg:scale-95 lg:hover:scale-100 shadow-lg hover:shadow-xl transform transition duration-500"> <nuxt-link :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name} }" ><img :src="video.img" class="rounded-lg "></nuxt-link>  </div>
+            <div class="p-3 bg-white mb-3 rounded-2xl scale-100 lg:scale-95 lg:hover:scale-100 shadow-lg hover:shadow-xl transform transition duration-500">
+              <nuxt-link
+              :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name, slug:video.slug} }"
+              :key="$route.params.id"
+              >
+                <img :src="video.img" class="rounded-lg ">
+              </nuxt-link>
+            </div>
             <span class="font-bold mt-4">{{ video.name }}</span>
           </div>
       </div>
@@ -28,12 +35,6 @@ export default {
       showHideSpinner: true
     }
   },
-  computed: {
-    baslik: function(){
-      return this.title.slice(0, -1)
-    }
-    
-  },
   beforeCreate() {
     this.showHideSpinner = true;
   },
@@ -44,10 +45,11 @@ export default {
       this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
       const res = (await this.$axios.$get(`https://api.vimeo.com/me/videos`)).data
       console.timeEnd('timer')
+      const letters = { "İ":"i", "I":"i", "ı":"i", "Ş":"s", "ş":"s", "Ğ":"g", "ğ":"g", "Ü":"u", "ü":"u", "Ö":"o", "ö":"o", "Ç":"c", "ç":"c" };
 
       this.videos = res.map(data => ({
         name: data.name,
-        img: data.pictures.sizes[4].link,
+        img: data.pictures.sizes[3].link,
         id: data.link.replace('https://vimeo.com/',''),
       }))
       
