@@ -1,6 +1,11 @@
 <template>
       
         <div class="inset-0 fixed z-50">
+          <SocialHead
+            :title="videoTitle"
+            :description="videoDesc"
+            :image="videoImg"
+          />
           <div  class="grid place-items-center min-h-screen pt-4 pb-20 text-center block sm:p-0">
             <div  class="fixed inset-0 transition-opacity" aria-hidden="true">
               <div class="absolute inset-0 bg-black opacity-20" style="opacity:0.2" @click.self="$router.push('/neler-yaptik/')" ></div>
@@ -29,6 +34,7 @@ export default {
     data() {
         return {
             videoID: this.$route.params.id,
+            
         }
     },
     async asyncData({ $axios, route }) {
@@ -37,7 +43,7 @@ export default {
             const ip = await $axios.$get(`https://api.vimeo.com/videos/${route.params.id}`)
             return { 
               videoTitle: ip.name,
-              videoDesc: ip.description.replaceAll('\n', ' '),
+              videoDesc: ip.description.replace(/\n/g, ' '),
               videoImg: ip.pictures.sizes[5].link
             }
           }
@@ -52,67 +58,6 @@ export default {
               console.log("Client Error:", err)
             }
           }
-          
-        
-    },
-    head(){
-      return {
-        title: this.videoTitle,
-        meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.videoDesc
-        },
-        {
-          
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: this.videoTitle
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: this.videoDesc
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: this.videoImg
-        },
-        {
-          hid: 'twitter:image:alt',
-          name: 'twitter:image:alt',
-          content: this.videoTitle
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: this.videoTitle
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.videoDesc
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.videoImg
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: this.videoImg
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.videoTitle
-        }
-      ]
-
-      }
     }
 }
 </script>
