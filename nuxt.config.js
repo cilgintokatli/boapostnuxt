@@ -141,7 +141,7 @@ export default {
   axios: {},
  
   sitemap: {
-    path: '/sitemap.xml',
+    path: '/sitemapindex.xml',
     hostname: 'https://boapost.com',
     routes: async () => {
       const config = {
