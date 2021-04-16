@@ -109,7 +109,7 @@ export default {
     '@nuxtjs/pwa',
     '@blokwise/dynamic',
     ['nuxt-gmaps', {
-      key: NUXT_ENV_GMAP_TOKEN,
+      key: process.env.GMAP_TOKEN,
       //you can use libraries: ['places']
     }]
     
