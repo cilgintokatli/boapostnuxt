@@ -141,6 +141,8 @@ export default {
   axios: {},
  
   sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://boapost.com',
     routes: async () => {
       const config = {
         headers: { Authorization: `Bearer ${process.env.NUXT_ENV_VIMEO_TOKEN}` }
