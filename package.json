@@ -12,6 +12,7 @@
     "@blokwise/dynamic": "^1.1.0",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.3",
     "express": "^4.17.1",
     "locomotive-scroll": "^4.0.6",

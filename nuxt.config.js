@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -111,7 +113,8 @@ export default {
     ['nuxt-gmaps', {
       key: process.env.NUXT_ENV_GMAP_TOKEN,
       //you can use libraries: ['places']
-    }]
+    }],
+    '@nuxtjs/sitemap'
     
   ],
   tailwindcss: {
@@ -136,6 +139,19 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+ 
+  sitemap: {
+    routes: async () => {
+      const config = {
+        headers: { Authorization: `Bearer ${process.env.NUXT_ENV_VIMEO_TOKEN}` }
+    }
+      const { data } = await axios.get('https://api.vimeo.com/me/videos', config)
+      const videos = data.data.map(data => ({
+        id: data.link.replace('https://vimeo.com/',''),
+      }))
+      return videos.map((video) => `/neler-yaptik/${video.id}`)
+    }
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
