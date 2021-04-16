@@ -39,7 +39,7 @@ export default {
     },
     async asyncData({ $axios, route }) {
           try{ 
-            $axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
+            $axios.setToken(process.env.NUXT_ENV_VIMEO_TOKEN, 'Bearer')
             const ip = await $axios.$get(`https://api.vimeo.com/videos/${route.params.id}`)
             return { 
               videoTitle: ip.name,

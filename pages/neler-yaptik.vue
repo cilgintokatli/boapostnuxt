@@ -46,7 +46,7 @@ export default {
     
     try {
       console.time('timer')
-      this.$axios.setToken(process.env.VIMEO_TOKEN, 'Bearer')
+      this.$axios.setToken(process.env.NUXT_ENV_VIMEO_TOKEN, 'Bearer')
       const res = (await this.$axios.$get(`https://api.vimeo.com/me/videos`)).data
       console.timeEnd('timer')
       const letters = { "İ":"i", "I":"i", "ı":"i", "Ş":"s", "ş":"s", "Ğ":"g", "ğ":"g", "Ü":"u", "ü":"u", "Ö":"o", "ö":"o", "Ç":"c", "ç":"c" };
