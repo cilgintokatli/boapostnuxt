@@ -3,8 +3,9 @@
       <h1 class="text-3xl my-5 lg:text-6xl text-yesil text-center font-bold">
         neler yaptık?
       </h1>
-      <div class="vimeos grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="(video, index) in videos" :key="index"> 
+      <div class="">
+         <transition-group  name="slide-in" class="vimeos grid-cols-1 lg:grid-cols-3 gap-8" :style="{ '--total': videos.length }">
+          <div v-for="(video, index) in videos" :key="index" :style="{'--i': index}"> 
             <div class="p-3 bg-white mb-3 rounded-2xl scale-100 lg:scale-95 lg:hover:scale-100 shadow-lg hover:shadow-xl transform transition duration-500">
               <nuxt-link
               :to="{ name:'neler-yaptik-id', params: {id: video.id, pTitle: video.name, slug:video.slug} }"
@@ -15,8 +16,11 @@
             </div>
             <span class="font-bold mt-4">{{ video.name }}</span>
           </div>
+         </transition-group>
       </div>
+      <transition name="fade">
        <nuxt-child :key="$route.params.id" ></nuxt-child>
+      </transition>
        <LoadScreen v-if="showHideSpinner" />
   </div>
 </template>
@@ -87,6 +91,33 @@ export default {
   display: grid;
     grid-auto-rows: min-content;;
     margin: 40px 0 40px 0;
+}
+.slide-in-move {
+  transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+}
+.slide-in-leave-active {
+  transition: opacity 0.4s linear, transform 0.4s cubic-bezier(0.5, 0, 0.7, 0.4);
+  transition-delay: calc( 0.2s * (var(--total) - var(--i)) );
+}
+.slide-in-enter-active {
+  transition: opacity 0.5s linear, transform 0.5s cubic-bezier(0.2, 0.5, 0.1, 1);
+  transition-delay: calc( 0.2s * var(--i) );
+}
+.slide-in-enter, .slide-in-leave-to {
+  opacity: 0;
+}
+.slide-in-enter {
+  transform: translateY(1.5em);
+}
+.slide-in-leave-to {
+  transform: translateY(1em);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0
 }
 
 </style>
