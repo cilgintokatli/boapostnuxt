@@ -8,7 +8,7 @@
         
         <transition name="slide-left">
           <div v-if="isOpen" class="menu shadow-2xl z-20 bg-maincolor grid-col-1 md:grid-rows-2 md:grid-cols-1 md:w-1/3 w-full pt-0 lg:pt-40" :class="isOpen ? '-open':'hidden'"  >
-            <ul class="flex-col md:flex-col items-center px-0 lg:items-end lg:px-12">
+            <ul class="flex-col justify-evenly md:flex-col items-center px-0 py-12 lg:items-end lg:px-12 lg:py-0">
               <li class="lg:hidden"><nuxt-link to="/" class="pr-0 text-sari font-bold">ana sayfa</nuxt-link></li>
               <li><nuxt-link to="/biz-kimiz/" class="pr-0 text-sari font-bold">biz kimiz?</nuxt-link></li>
               <li><nuxt-link to="/ne-yapiyoruz/" class="pr-0 text-sari font-bold">ne yapıyoruz?</nuxt-link></li>
@@ -129,7 +129,6 @@ export default {
 }
 .menu ul {
   list-style: none;
-  justify-content: center;
   display: flex;
   width: 100%;
 
@@ -210,7 +209,14 @@ button:focus{
 }
 
 
-
+.nav-icon{
+  position: absolute;
+  right: 0px;
+}
+.button.-menu-open > .nav-icon {
+  position: fixed!important;
+  margin-right: 3rem;
+}
 
 .nav-icon:after, 
 .nav-icon:before, 
