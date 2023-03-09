@@ -25,7 +25,7 @@
       </div>
     </transition>
     <div v-on:click="isModal = true"
-      v-block-reveal="{ isContentHidden: 'true', delay: 800, bgcolor: '#4cae90', direction: 'rl' }">
+      v-block-reveal="{ isContentHidden: 'true', delay: 500, bgcolor: '#4cae90', direction: 'rl' }">
       <div
         class="order-1 grid align-center shadow-2xl bg-white lg:scale-75 transform transition duration-500 lg:hover:scale-100 rounded-xl lg:px-10 lg:py-10 lg:rounded-3xl cursor-pointer">
         <div class="mx-auto py-5 px-5 bg-white w-full">
